@@ -15,5 +15,16 @@ class Session{
   
     $this->config[$key]= $value;
   }
+  
+  public function unKeys($keys){
+    if(is_array($keys)){
+      foreach($keys as $k=>$v){
+        unset($_SESSION[$k]);
+      }
+    }else{
+      unset($keys);
+    }
+    
+  }
 
 }
