@@ -35,5 +35,7 @@ class Session{
     }
     
   }
+  
+  public function test(){}
 
 }
